@@ -1,5 +1,9 @@
+package shapes.two_dimensional;
+
+import forms.Quadrangle;
+
 public class Trapezoid implements Quadrangle {
-    int sideA, sideB, sideC, sideD;
+    private int sideA, sideB, sideC, sideD;
 
     public Trapezoid(int sideA, int sideB, int sideC, int sideD) {
         this.sideA = sideA;
@@ -14,11 +18,6 @@ public class Trapezoid implements Quadrangle {
     @Override
     public boolean isAllSidesHaveParallel() {
         return false;
-    }
-
-    @Override
-    public String figureName() {
-        return "Trapezoid";
     }
 
     @Override

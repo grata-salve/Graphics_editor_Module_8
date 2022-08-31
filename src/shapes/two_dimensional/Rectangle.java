@@ -1,5 +1,9 @@
+package shapes.two_dimensional;
+
+import forms.Quadrangle;
+
 public class Rectangle implements Quadrangle {
-    int height, width;
+    private int height, width;
 
     public Rectangle(int height, int width) {
         this.height = height;
@@ -23,11 +27,6 @@ public class Rectangle implements Quadrangle {
 
     public void setWidth(int width) {
         this.width = width;
-    }
-
-    @Override
-    public String figureName() {
-        return "Rectangle";
     }
 
     @Override

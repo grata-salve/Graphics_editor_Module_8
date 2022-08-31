@@ -1,16 +1,15 @@
+package shapes.two_dimensional;
+
+import forms.Quadrangle;
+
 public class Square implements Quadrangle {
-    int side;
+    private int side;
 
     public Square(int side) {
         this.side = side;
     }
 
     public Square() {
-    }
-
-    @Override
-    public String figureName() {
-        return "Square";
     }
 
     @Override

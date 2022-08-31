@@ -1,3 +1,7 @@
+package shapes.two_dimensional;
+
+import forms.Shape;
+
 public class Circle implements Shape {
     private float radius;
 
@@ -6,11 +10,6 @@ public class Circle implements Shape {
     }
 
     public Circle() {
-    }
-
-    @Override
-    public String figureName() {
-        return "Circle";
     }
 
     @Override

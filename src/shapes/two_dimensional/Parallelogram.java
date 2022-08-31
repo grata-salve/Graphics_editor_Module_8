@@ -1,5 +1,9 @@
+package shapes.two_dimensional;
+
+import forms.Quadrangle;
+
 public class Parallelogram implements Quadrangle {
-    int sideA, sideB, angle;
+    private int sideA, sideB, angle;
 
     public Parallelogram(int sideA, int sideB, int angle) {
         this.sideA = sideA;
@@ -16,11 +20,6 @@ public class Parallelogram implements Quadrangle {
     }
 
     @Override
-    public String figureName() {
-        return "Parallelogram";
-    }
-
-    @Override
     public double calculateArea() {
         return sideA + sideB * Math.sin(angle);
     }
@@ -28,5 +27,29 @@ public class Parallelogram implements Quadrangle {
     @Override
     public double calculatePerimeter() {
         return (sideB + sideA) * 2;
+    }
+
+    public int getSideA() {
+        return sideA;
+    }
+
+    public void setSideA(int sideA) {
+        this.sideA = sideA;
+    }
+
+    public int getSideB() {
+        return sideB;
+    }
+
+    public void setSideB(int sideB) {
+        this.sideB = sideB;
+    }
+
+    public int getAngle() {
+        return angle;
+    }
+
+    public void setAngle(int angle) {
+        this.angle = angle;
     }
 }
