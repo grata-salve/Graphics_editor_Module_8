@@ -1,7 +1,5 @@
 package shapes.two_dimensional;
 
-import forms.Quadrangle;
-
 public class Parallelogram implements Quadrangle {
     private int sideA, sideB, angle;
 

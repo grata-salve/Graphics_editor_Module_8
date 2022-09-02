@@ -1,7 +1,5 @@
 package shapes.three_dimensional;
 
-import forms.ThreeDimensionalShape;
-
 public class Cube implements ThreeDimensionalShape {
     private int side;
 

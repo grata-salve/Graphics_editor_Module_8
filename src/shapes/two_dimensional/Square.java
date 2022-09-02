@@ -1,7 +1,5 @@
 package shapes.two_dimensional;
 
-import forms.Quadrangle;
-
 public class Square implements Quadrangle {
     private int side;
 

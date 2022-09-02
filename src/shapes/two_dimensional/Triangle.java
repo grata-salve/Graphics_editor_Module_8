@@ -1,8 +1,6 @@
 package shapes.two_dimensional;
 
-import forms.Shape;
-
-public class Triangle implements Shape {
+public class Triangle implements TwoDimensionalShape {
     private int sideA, sideB, sideC;
 
     public Triangle(int sideA, int sideB, int sideC) {

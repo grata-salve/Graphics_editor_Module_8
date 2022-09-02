@@ -1,11 +1,13 @@
 package util;
 
-import forms.Shape;
+import shapes.two_dimensional.TwoDimensionalShape;
+
+import java.awt.*;
 
 public class ShapeName {
     private static final ShapeName instance = new ShapeName();
 
-    private Shape shape;
+    private TwoDimensionalShape twoDimensionalShape;
 
     private ShapeName() {
     }
@@ -14,16 +16,20 @@ public class ShapeName {
         return instance;
     }
 
-    public Shape getShape() {
-        return shape;
+    public TwoDimensionalShape getShape() {
+        return twoDimensionalShape;
     }
 
-    public void setShape(Shape shape) {
-        this.shape = shape;
+    public void setShape(TwoDimensionalShape twoDimensionalShape) {
+        this.twoDimensionalShape = twoDimensionalShape;
+    }
+
+    public String getShapeName(TwoDimensionalShape twoDimensionalShape) {
+        return twoDimensionalShape.figureName(twoDimensionalShape);
     }
 
     @Override
     public String toString() {
-        return shape.figureName(shape);
+        return twoDimensionalShape.figureName(twoDimensionalShape);
     }
 }

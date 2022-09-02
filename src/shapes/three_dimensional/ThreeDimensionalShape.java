@@ -1,4 +1,4 @@
-package forms;
+package shapes.three_dimensional;
 
 public interface ThreeDimensionalShape {
     default String figureName(ThreeDimensionalShape threeDimensionalShape) {

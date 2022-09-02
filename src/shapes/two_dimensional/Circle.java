@@ -1,8 +1,6 @@
 package shapes.two_dimensional;
 
-import forms.Shape;
-
-public class Circle implements Shape {
+public class Circle implements TwoDimensionalShape {
     private float radius;
 
     public Circle(float radius) {

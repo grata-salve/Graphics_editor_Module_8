@@ -1,8 +1,6 @@
 package shapes.two_dimensional;
 
-import forms.Shape;
-
-public class Semicircle implements Shape {
+public class Semicircle implements TwoDimensionalShape {
     private int radius;
 
     public Semicircle(int radius) {

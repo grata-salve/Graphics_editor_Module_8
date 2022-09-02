@@ -1,7 +1,5 @@
 package shapes.two_dimensional;
 
-import forms.Quadrangle;
-
 public class Rectangle implements Quadrangle {
     private int height, width;
 
